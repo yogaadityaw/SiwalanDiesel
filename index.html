@@ -38,7 +38,7 @@
             color: red; /* Mengubah warna teks menjadi merah */
             font-size: 1rem;
 
-        /* Menyesuaikan ukuran font (ubah sesuai kebutuhan) */
+            /* Menyesuaikan ukuran font (ubah sesuai kebutuhan) */
         }
     </style>
 
@@ -91,8 +91,24 @@
             display: block;
         }
 
-
     </style>
+
+    <style>
+        .navbar-toggler {
+            border: none; /* Menghapus border di tombol hamburger */
+            outline: none; /* Menghilangkan outline saat tombol di-klik atau fokus */
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none; /* Menghilangkan shadow saat tombol di-klik atau fokus */
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath stroke='red' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M1 2h14M1 8h14M1 14h14'/%3E%3C/svg%3E");
+            /* Tetap menggunakan ikon hamburger dengan warna merah */
+        }
+    </style>
+
 
 </head>
 
@@ -114,7 +130,8 @@
             <img src="img/logo.jpeg" alt="Siwalan Diesel Logo" class="logo-img"> Siwalan Diesel
         </h1>
     </a>
-    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -135,7 +152,7 @@
             <a href="contact.html" class="nav-item nav-link">Kontak</a>
         </div>
         <a href="https://wa.me/6281332197868" class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block">Hubungi
-            Kami</a></a>
+            Kami</a>
     </div>
 </nav>
 <!-- Navbar End -->
@@ -210,9 +227,9 @@
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                 <div class="d-flex flex-column">
                     <img class="img-fluid w-10 align-self-end" src="img/asset3.jpg" alt="">
-                    <div class="w-50 bg-secondary p-5" style="margin-top: -25%;">
-                        <h1 class="text-uppercase text-primary mb-3">20+ Tahun</h1>
-                        <h2 class="text-uppercase mb-0">Pengalaman</h2>
+                    <div class="w-50 bg-secondary p-5" style="margin-top: -10%;">
+                        <h1 class="text-uppercase text-primary mb-3" style="font-size: 2rem">20+ Tahun</h1>
+                        <h2 class="text-uppercase mb-0" style="font-size: 2rem">Pengalaman</h2>
                     </div>
                 </div>
             </div>
@@ -222,7 +239,7 @@
                 <p style="text-align: justify;">Siwalan Diesel merupakan perusahaan jasa yang bergerak di bidang
                     reparasi genset dan telah beroperasi sejak tahun 2000. Awalnya, perusahaan ini berlokasi di
                     Siwalankerto, Kota Surabaya, namun pada tahun 2015 berpindah ke Balungbendo, Sidoarjo, dan resmi
-                    menggunakan nama CV Siwalan Diesel.</p>
+                    menggunakan nama Siwalan Diesel.</p>
                 <p class="mb-4"><a href="about.html">Selengkapnya</a></p>
                 <div class="row g-4">
                     <div class="col-md-6">
@@ -233,7 +250,8 @@
                     <div class="col-md-6">
                         <h3 class="text-uppercase mb-3">100+ klien</h3>
                         <p class="mb-5" style="text-align: justify;">Kami telah melayani lebih dari 100 perusahaan dari
-                            berbagai sektor, dan semua perusahaan sangat puas dan percaya dengan jasa dan produk kami.</p>
+                            berbagai sektor, dan semua perusahaan sangat puas dan percaya dengan jasa dan produk
+                            kami.</p>
                     </div>
                 </div>
             </div>
@@ -272,7 +290,7 @@
                         <i class="fas fa-tools"></i>
                     </div>
                     <div class="ps-4">
-                        <h3 class="text-uppercase mb-3">General Overhaul 10.000 Jam</h3>
+                        <h3 class="text-uppercase mb-3">General Overhaul 20.000 Jam</h3>
                         <!-- <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam.</p>
                         <span class="text-uppercase text-primary">From $15</span> -->
                     </div>
@@ -342,11 +360,25 @@
                         <i class="fas fa-tools"></i>
                     </div>
                     <div class="ps-4">
-                        <h3 class="text-uppercase mb-3">Jual Beli Generator</h3>
+                        <h3 class="text-uppercase mb-3">Jual Beli Generator Set</h3>
                         <!-- <p>Kami menyediakan berbagai komponen-komponen spare parts cummins</p> -->
                         <!-- <span class="text-uppercase text-primary">From $15</span> -->
                     </div>
                     <!-- <a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a> -->
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                    <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center"
+                         style="width: 60px; height: 60px;">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="ps-4">
+                        <h3 class="text-uppercase mb-3">Service Inframe 10.000 Jam</h3>
+                        <!-- <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam.</p>
+                        <span class="text-uppercase text-primary">From $15</span> -->
+                    </div>
+                    <!--                        <a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>-->
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -504,7 +536,7 @@
                         <img class="img-fluid" src="img/pt_tanto.png" alt="">
                     </div>
                     <div class="bg-secondary text-center p-4">
-                        <h5 class="text-uppercase">PT Tanto Intime Line</h5>
+                        <h5 class="text-uppercase">PT Tanto Intim Lines</h5>
                     </div>
                 </div>
             </div>
@@ -542,7 +574,8 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item">
                         <div class="team-img">
-                            <img class="img-fluid" src="img/pt_gangsar_genset.png" height="1000" width="1000" alt="" style="object-fit: fill">
+                            <img class="img-fluid" src="img/pt_gangsar_genset.png" height="1000" width="1000" alt=""
+                                 style="object-fit: fill">
                         </div>
                         <div class="bg-secondary text-center p-4">
                             <h5 class="text-uppercase">PT Gangsar Genset</h5>
@@ -608,13 +641,13 @@
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <p class="d-inline-block bg-secondary text-primary py-1 px-4">Testimonial</p>
-                <h1 class="text-uppercase">Testimoni klien Kami</h1>
+                <h1 class="text-uppercase">Testimoni Pelanggan Kami</h1>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item text-center"
                      data-dot="<img class='img-fluid' src='img/pt_tissan.png' alt='' >" style="object-fit: fill">
                     <h4 class="text-uppercase">PT Tissan Global</h4>
-<!--                    <p class="text-primary">Profession</p>-->
+                    <!--                    <p class="text-primary">Profession</p>-->
                     <span class="fs-5">Dengan Siwalan Diesel, proses produksi Kami tetap bisa berjalan meskipun ada
                         pemadaman listrik. Sehingga kami tetap mampu untuk menyelesaikan proses produksi sesuai timeline
                         yang Kami janjikan kepada Customer. Mesin genset dari Siwalan Diesel ini memiliki power yang kuat
@@ -625,17 +658,17 @@
                 <div class="testimonial-item text-center"
                      data-dot="<img class='img-fluid' src='img/superindant_electrict.jpg' alt=''>">
                     <h4 class="text-uppercase">superintendent electric</h4>
-<!--                    <p class="text-primary">Profession</p>-->
-                    <span class="fs-5">Saya sangat puas dengan layanan servis genset di CV Siwalan Diesel. Profesionalisme tim mereka terbukti
+                    <!--                    <p class="text-primary">Profession</p>-->
+                    <span class="fs-5">Saya sangat puas dengan layanan servis genset di Siwalan Diesel. Profesionalisme tim mereka terbukti
                         dari ketepatan waktu dan kualitas pengerjaan yang prima. Masalah genset saya ditangani dengan cepat dan efektif, membuatnya
-                        kembali berfungsi dengan optimal. CV Siwalan Diesel adalah pilihan tepat untuk kebutuhan servis genset Anda.</span>
+                        kembali berfungsi dengan optimal. Siwalan Diesel adalah pilihan tepat untuk kebutuhan servis genset Anda.</span>
                 </div>
-<!--                    <div class="testimonial-item text-center"-->
-<!--                         data-dot="<img class='img-fluid' src='img/testimonial-3.jpg' alt=''>">-->
-<!--                    <h4 class="text-uppercase">Client Name</h4>-->
-<!--                    <p class="text-primary">Profession</p>-->
-<!--                    <span class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</span>-->
-<!--                </div>-->
+                <!--                    <div class="testimonial-item text-center"-->
+                <!--                         data-dot="<img class='img-fluid' src='img/testimonial-3.jpg' alt=''>">-->
+                <!--                    <h4 class="text-uppercase">Client Name</h4>-->
+                <!--                    <p class="text-primary">Profession</p>-->
+                <!--                    <span class="fs-5">Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</span>-->
+                <!--                </div>-->
             </div>
         </div>
     </div>
@@ -656,7 +689,7 @@
                         <button class="accordion-button collapsed text-danger" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseOne" aria-expanded="false"
                                 aria-controls="flush-collapseOne">
-                            Berapa lama waktu yang dibutuhkan untuk melakukan perbaikan genset di CV Siwalan Diesel ?
+                            Berapa lama waktu yang dibutuhkan untuk melakukan perbaikan genset di Siwalan Diesel ?
                         </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse text-white"
@@ -672,7 +705,7 @@
                         <button class="accordion-button collapsed text-danger" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                 aria-controls="flush-collapseTwo">
-                            Apa saja jenis layanan yang ditawarkan oleh CV Siwalan Diesel ?
+                            Apa saja jenis layanan yang ditawarkan oleh Siwalan Diesel ?
                         </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse text-white"
@@ -693,16 +726,16 @@
                         <button class="accordion-button collapsed text-danger" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseThree" aria-expanded="false"
                                 aria-controls="flush-collapseThree">
-                            Berapa biaya reparasi genset di CV Siwalan Diesel ?
+                            Berapa biaya reparasi genset di Siwalan Diesel ?
 
                         </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                          aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Biaya reparasi genset di CV Siwalan Diesel sangat terjangkau,
+                        <div class="accordion-body">Biaya reparasi genset di Siwalan Diesel sangat terjangkau,
                             bergantung pada jenis dan tingkat kerusakan, serta merek dan model genset.
                             Untuk mendapatkan perkiraan biaya yang akurat, disarankan untuk berkonsultasi langsung
-                            dengan admin dari CV Siwalan Diesel dengan menghubungi kontak yang telah tersedia.
+                            dengan admin dari Siwalan Diesel dengan menghubungi kontak yang telah tersedia.
                         </div>
                     </div>
                 </div>
@@ -712,13 +745,14 @@
                         <button class="accordion-button collapsed text-danger" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#flush-collapseFourth" aria-expanded="false"
                                 aria-controls="flush-collapseFourth">
-                            Apakah CV Siwalan Diesel memberikan garansi terhadap jasa dan produknya?
+                            Apakah Siwalan Diesel memberikan garansi terhadap jasa dan produknya?
                         </button>
                     </h2>
                     <div id="flush-collapseFourth" class="accordion-collapse collapse text-white"
                          aria-labelledby="flush-headingFourth" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
-                            CV Siwalan Diesel menyediakan garansi pada layanan reparasi genset untuk informasi lebih detail dapat langsung menghubungi admin kami.
+                            Siwalan Diesel menyediakan garansi pada layanan reparasi genset untuk informasi lebih detail
+                            dapat langsung menghubungi admin kami.
                         </div>
                     </div>
                 </div>
@@ -814,12 +848,12 @@
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                     &copy; <a class="border-bottom" href="#">Siawalan Diesel</a>, All Right Reserved.
                 </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="border-bottom">HTML Codex : "https://htmlcodex.com"</a>
-                    <br>Distributed By: <a class="border-bottom" target="_blank">ThemeWagon :
-                    "https://themewagon.com"</a>
-                </div>
+                <!--                <div class="col-md-6 text-center text-md-end">-->
+                <!--                    &lt;!&ndash;/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/&ndash;&gt;-->
+                <!--                    Designed By <a class="border-bottom">HTML Codex : "https://htmlcodex.com"</a>-->
+                <!--                    <br>Distributed By: <a class="border-bottom" target="_blank">ThemeWagon :-->
+                <!--                    "https://themewagon.com"</a>-->
+                <!--                </div>-->
             </div>
         </div>
     </div>

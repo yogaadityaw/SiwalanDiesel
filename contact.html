@@ -46,6 +46,23 @@
             /* Sesuaikan jarak antara logo dan teks */
         }
     </style>
+
+    <style>
+        .navbar-toggler {
+            border: none; /* Menghapus border di tombol hamburger */
+            outline: none; /* Menghilangkan outline saat tombol di-klik atau fokus */
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none; /* Menghilangkan shadow saat tombol di-klik atau fokus */
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath stroke='red' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M1 2h14M1 8h14M1 14h14'/%3E%3C/svg%3E");
+            /* Tetap menggunakan ikon hamburger dengan warna merah */
+        }
+    </style>
+
 </head>
 
 <body>
@@ -66,7 +83,8 @@
             <img src="img/logo.jpeg" alt="Siwalan Diesel Logo" class="logo-img"> Siwalan Diesel
         </h1>
     </a>
-    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -183,7 +201,7 @@
                     <h1 class="text-uppercase mb-4">Dapatkan Pengalaman lebih baik bersama kami </h1>
                     <p class="mb-4"> Tertarik untuk mengenal profil kami? unduh profil kami ! <a
                             href="asset/Company%20Profile%20SIWALAN%20DIESEL.pdf">Unduh Profil</a>.</p>
-                    <form id="contact-form" action="https://formsubmit.co/ff12daf7bc7e54457790f18e66a2a595"
+                    <form id="contact-form" action="https://formsubmit.co/siwalandiesel@siwalandiesel.com"
                           method="POST">
                         <div class="row g-3">
                             <div class="col-md-6">
@@ -327,12 +345,12 @@
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                     &copy; <a class="border-bottom" href="#">Siawalan Diesel</a>, All Right Reserved.
                 </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="border-bottom">HTML Codex : "https://htmlcodex.com"</a>
-                    <br>Distributed By: <a class="border-bottom" target="_blank">ThemeWagon :
-                    "https://themewagon.com"</a>
-                </div>
+                <!--                <div class="col-md-6 text-center text-md-end">-->
+                <!--                    &lt;!&ndash;/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/&ndash;&gt;-->
+                <!--                    Designed By <a class="border-bottom">HTML Codex : "https://htmlcodex.com"</a>-->
+                <!--                    <br>Distributed By: <a class="border-bottom" target="_blank">ThemeWagon :-->
+                <!--                    "https://themewagon.com"</a>-->
+                <!--                </div>-->
             </div>
         </div>
     </div>
