@@ -63,6 +63,39 @@
         }
     </style>
 
+    <style>
+        /* Mengubah warna placeholder menjadi putih */
+        input::placeholder,
+        textarea::placeholder {
+            color: white;
+            opacity: 1;
+        }
+    </style>
+
+    <style>
+        /*.google-map-container {*/
+        /*    margin-top: 20px;*/
+        /*    width: 100%;*/
+        /*}*/
+
+        @media (max-width: 768px) {
+            .google-map iframe {
+                height: 300px; /* Tinggi untuk tampilan mobile */
+            }
+        }
+
+            /*.contact-form {*/
+            /*    padding: 20px;*/
+            /*}*/
+
+        @media (min-width: 769px) {
+            .google-map iframe {
+                height: 500px; /* Tinggi untuk tampilan desktop */
+            }
+        }
+</style>
+
+
 </head>
 
 <body>
@@ -195,11 +228,11 @@
 <div class="container-xxl py-5">
     <div class="container">
         <div class="row g-0">
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <div class="col-lg-6 col-md-12" data-wow-delay="0.1s">
                 <div class="bg-secondary p-5">
                     <p class="d-inline-block bg-dark text-primary py-1 px-4">Hubungi Kami </p>
                     <h1 class="text-uppercase mb-4">Dapatkan Pengalaman lebih baik bersama kami </h1>
-                    <p class="mb-4"> Tertarik untuk mengenal profil kami? unduh profil kami ! <a
+                    <p class="mb-4 text-white"> Tertarik untuk mengenal profil kami? unduh profil kami ! <a
                             href="asset/Company%20Profile%20SIWALAN%20DIESEL.pdf">Unduh Profil</a>.</p>
                     <form id="contact-form" action="https://formsubmit.co/siwalandiesel@siwalandiesel.com"
                           method="POST">
@@ -207,7 +240,7 @@
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="text" class="form-control bg-transparent" id="name" name="name"
-                                           placeholder="Nama Anda">
+                                           placeholder="Nama Anda ">
                                     <label for="name">Nama Anda</label>
                                 </div>
                             </div>
@@ -242,15 +275,12 @@
                     </form>
                 </div>
             </div>
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                <div class="h-100" style="min-height: 400px;">
-                    <!-- <iframe class="google-map w-100 h-100"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
-                    frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0" style="filter: grayscale(100%) invert(92%) contrast(83%); border: 0;"></iframe> -->
-
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1358.967218836866!2d112.56518068404002!3d-7.4242541527028045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMjUnMjguMCJTIDExMsKwMzMnNTYuNiJF!5e0!3m2!1sen!2sid!4v1707395444085!5m2!1sen!2sid"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="col-lg-6 col-md-12 mt-4 mt-lg-0">
+                <div class="google-map-container" style="width: 100%;">
+                    <iframe class="google-map w-100"
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1358.967218836866!2d112.56518068404002!3d-7.4242541527028045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zN8KwMjUnMjguMCJTIDExMsKwMzMnNTYuNiJF!5e0!3m2!1sen!2sid!4v1707395444085!5m2!1sen!2sid"
+                            frameborder="0" allowfullscreen="" aria-hidden="false" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" style="border: 0; width: 100%; height: 500px;"></iframe>
                 </div>
             </div>
         </div>
@@ -334,7 +364,7 @@
                             class="fab fa-tiktok"></i></a>
                     <a class="btn btn-lg-square btn-dark text-primary m-1" href="https://wa.me/6281332197868"><i
                             class="fab fa-whatsapp"></i></a>
-                    <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-facebook"></i></a>
+<!--                    <a class="btn btn-lg-square btn-dark text-primary m-1" href=""><i class="fab fa-facebook"></i></a>-->
                 </div>
             </div>
         </div>
